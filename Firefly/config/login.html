@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Glassmorphism</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #40e0d0 50%, #48d1cc 100%);
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1100px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 60px 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-section img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .left-section h2 {
+            color: rgb(0, 0, 0);
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-section p {
+            color: rgba(0, 0, 0, 0.9);
+            line-height: 1.6;
+            font-size: 16px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-form h1 {
+            color: rgb(0, 0, 0);
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form .subtitle {
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: rgb(0, 0, 0);
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: rgba(0, 0, 0, 0.6);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-options label {
+            color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .form-options input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .form-options a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .form-options a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-login:active {
+            transform: translateY(0);
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 25px;
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-section, .right-section {
+                padding: 40px 30px;
+            }
+
+            .left-section img {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="img/loginistri.jpeg" alt="Team Working">
+            <h2>Selamat Datang!</h2>
+            <p>Bergabunglah dengan ribuan pengguna yang telah mempercayai platform kami untuk mengelola pekerjaan mereka dengan lebih efisien. Akses semua fitur template premium dan template biasa yg free.</p>
+        </div>
+        
+        <div class="right-section">
+            <div class="login-form">
+                <h1>Masuk</h1>
+                <p class="subtitle">Silakan masukkan kredensial Anda</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="nama@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Kata Sandi</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox">
+                            Ingat saya
+                        </label>
+                        <a href="#">Lupa kata sandi?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn-login">Masuk</button>
+                    
+                    <div class="signup-link">
+                        Belum punya akun? <a href="#">Daftar sekarang</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

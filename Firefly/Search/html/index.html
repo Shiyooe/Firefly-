@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firefly — Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="main-body">
+
+  <nav class="navbar-base" id="navbar">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="user-icon">👤</div>
+        <button class="add-button">+</button>
+      </div>
+
+      <div class="hidden md:flex space-x-8 text-gray-700">
+        <a href="../../Home/html/index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link nav-active">Search</a>
+        <a href="../../Gallery/html/index.html" class="nav-link">Gallery</a>
+        <a href="../../Message/html/index.html" class="nav-link">Message</a>
+      </div>
+
+      <div class="flex space-x-3">
+        <a href="../../config/login.html">
+          <button class="login-button">Log in </button>
+        </a>
+        <a href="../../config/signup.html">
+          <button class="signup-button">Sign up </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="container mx-auto max-w-6xl">
+      <div id="heroCarousel" class="carousel-container">
+        <!-- Slide 1 -->
+         
+        <div class="carousel-slide slide-active relative inset-0 w-full h-[500px] overflow-hidden rounded-2xl absolute">
+          <img src="../img/her.jpeg" alt="Firefly Art 1" class="parallax-bg absolute inset-0 w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          <div class="relative z-10 h-full flex items-center px-8">
+            <div class="max-w-lg text-left space-y-4">
+              <div class="inline-flex items-center space-x-3 animate-on-scroll">
+                <span class="tag-featured">Featured</span>
+                <span class="text-xs text-gray-300">HSR • Character Firefly</span>
+              </div>
+              
+              <h1 class="text-5xl font-extrabold text-white drop-shadow-lg animate-on-scroll">Firefly</h1>
+              <p class="text-gray-200 mb-2 leading-relaxed max-w-md animate-on-scroll">Sweet and Genuine Personality: She comes across as incredibly cute, wholesome, and genuine. Her interactions with the Trailblazer (MC) are often heartwarming, providing a breath of fresh air amidst the game's more serious moments.</p>
+              <div class="flex items-center gap-4 animate-on-scroll">
+                <a href="https://www.behindthevoiceactors.com/video-games/Honkai-Star-Rail/Firefly/" class="explore-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  Explore Voice
+                </a>
+                
+                <button class="more-info-button">
+                  More Info
+                </button>
+                
+              </div>
+              <div class="mt-2 text-sm text-gray-300 animate-on-scroll">
+                <span class="font-medium text-white">Top track:</span>
+                <span>World is Mine</span>
+                <span class="text-xs text-gray-300">HSR • Character Firefly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- End Slide 1 -->
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide slide-secondary">
+          <img src="../img/skin1.webp" alt="Firefly background" class="parallax-bg absolute inset-0 w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          <div class="relative z-10 h-full flex items-center px-8">
+            <div class="max-w-lg text-left space-y-4">
+              <div class="inline-flex items-center space-x-3 animate-on-scroll">
+                <span class="tag-featured">Featured</span>
+                <span class="text-xs text-gray-300">New • Skin Spring Missive</span>
+              </div>
+              <h1 class="text-5xl font-extrabold text-white drop-shadow-lg animate-on-scroll">Spring Missive</h1>
+              <p class="text-gray-200 mb-2 leading-relaxed max-w-md animate-on-scroll">
+                Firefly New Skin is here! Experience, She so cute and fresh like spring breeze and japanese Style
+              </p>
+              <div class="flex items-center gap-4 animate-on-scroll">
+                <a href="https://game8.co/games/Honkai-Star-Rail/archives/531403" class="explore-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  About The Skin 
+                </a>
+                <button class="more-info-button">
+                  More Info
+                </button>
+              </div>
+              <div class="mt-2 text-sm text-gray-300 animate-on-scroll">
+                <span class="font-medium text-white">Top track:</span>
+                <span>Digital Dream</span>
+                <span class="text-xs text-gray-300">HSR • Character Firefly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Slide 2 -->
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide slide-secondary">
+          <img src="../img/wanted.avif" alt="Firefly Art 3" class="parallax-bg absolute inset-0 w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+          <div class="relative z-10 h-full flex items-center px-8">
+            <div class="max-w-lg text-left space-y-4">
+              <div class="inline-flex items-center space-x-3 animate-on-scroll">
+                <span class="tag-featured">Featured</span>
+                <span class="text-xs text-gray-300">New • Concept Art</span>
+              </div>
+              <h1 class="text-5xl font-extrabold text-white drop-shadow-lg animate-on-scroll">About Firefly</h1>
+              <p class="text-gray-200 mb-2 leading-relaxed max-w-md animate-on-scroll">Firefly is a character from Honkai: Star Rail, known for her role as a member of the Stellaron Hunters. She is a Fire and Destruction character, born as a weapon and afflicted with Entropy Loss Syndrome due to genetic modification. Firefly is characterized by her mechanical armor SAM and her relentless pursuit of the meaning of life. She plays a significant role in the game's storyline, particularly in the Trailblaze missions, where she is an interstellar refugee and a key character in the narrative.</p>
+              <div class="flex items-center gap-4 animate-on-scroll">
+                <a href="#" class="explore-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                  Full About Her
+                </a>
+                <button class="more-info-button">
+                  More Info
+                </button>
+              </div>
+              <div class="mt-2 text-sm text-gray-300 animate-on-scroll">
+                <span class="font-medium text-white">Top track:</span>
+                <span>Tell Your World</span>
+                <span class="text-xs text-gray-300">HSR • Character Firefly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Slide 3 -->
+
+      </div>
+
+      <div class="flex justify-center mt-8 space-x-2">
+        <button class="dot active-dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
+
+      <div class="carousel-arrow left-4">
+        <button id="prevBtn" class="arrow-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      </div>
+      <div class="carousel-arrow right-4">
+        <button id="nextBtn" class="arrow-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="main-content-grid">
+    <div class="card-base animate-on-scroll">
+      <h3 class="text-2xl font-bold mb-4 flex items-center">
+        Artwork <span class="ml-2 text-teal-500">▶</span>
+      </h3>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="group cursor-pointer">
+          <div class="art-preview-container">
+            <img src="../img/Firefly.jpg" alt="Art 1" class="art-image" />
+          </div>
+          <p class="text-xs text-gray-500 mt-2">by @Shiyooe</p>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="art-preview-container">
+            <img src="../img/Firefly 🤍.jpg" alt="Art 2" class="art-image" />
+          </div>
+          <p class="text-xs text-gray-500 mt-2">by @Shiyooe</p>
+        </div>
+        <div class="group cursor-pointer">
+          <div class="art-preview-container">
+            <img src="../img/firepng.png" alt="Art 2" class="art-image" />
+          </div>
+          <p class="text-xs text-gray-500 mt-2">by @Shiyooe</p>
+        </div>
+      </div>
+      <button class="view-more-button">View More</button>
+    </div>
+
+    <div class="card-base animate-on-scroll">
+      <h3 class="text-2xl font-bold mb-4">Recent Search</h3>
+      <div id="searchHistory" class="space-y-3">
+        <!-- Konten dinamis akan ditambahkan oleh JS -->
+      </div>
+      <div class="mt-4 pt-4 border-t border-gray-200">
+        <div class="flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search for Firefly..." class="w-full p-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" />
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <div class="card-info info-number animate-on-scroll">
+        <div class="info-icon info-number-bg">01</div>
+        <div>
+          <h4 class="font-bold text-lg">The Number</h4>
+          <p class="text-sm text-gray-500 mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="card-info info-singer animate-on-scroll">
+        <div class="info-icon info-singer-bg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l12-3M3 6v13" />
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg">The Soldier</h4>
+          <a href="#" class="text-teal-500 hover:underline">next her</a>
+          <p class="text-sm text-gray-500 mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="card-info info-song animate-on-scroll">
+        <div class="info-icon info-song-bg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l12-3M3 6v13" />
+          </svg>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg">The Song</h4>
+          <a href="#" class="text-teal-500 hover:underline">Listen Now</a>
+          <p class="text-sm text-gray-500 mt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 px-4 bg-gray-50 border-t border-gray-200 text-center text-gray-500 text-sm">
+    © 2025 Firefly — Designed by Akrom
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
